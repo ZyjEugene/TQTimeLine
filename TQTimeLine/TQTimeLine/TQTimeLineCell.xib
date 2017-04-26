@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="114" id="KGk-i7-Jjw" customClass="TQTimeLineCell">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="114"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="324" height="113"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="KW1-iB-Fjk">
+                        <rect key="frame" x="14" y="42" width="29" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="29" id="ddV-Nl-hyz"/>
+                            <constraint firstAttribute="width" constant="29" id="zpR-dm-XLc"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="idm-Vo-3pJ">
+                        <rect key="frame" x="28" y="0.0" width="1" height="35"/>
+                        <color key="backgroundColor" red="1" green="0.61326288330000001" blue="0.053150410289999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="mLF-Nx-5LD"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6x9-Zs-AV9">
+                        <rect key="frame" x="28" y="79" width="1" height="35"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="JM3-ey-aap"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-----" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEV-I8-cFf">
+                        <rect key="frame" x="66" y="36" width="250" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="wlP-dH-5CF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="leadingMargin" secondItem="KW1-iB-Fjk" secondAttribute="leading" constant="-6" id="0b3-OE-FbA"/>
+                    <constraint firstItem="idm-Vo-3pJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="351-Ly-fPA"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="6x9-Zs-AV9" secondAttribute="bottom" constant="-8.5" id="9wJ-Zv-Q30"/>
+                    <constraint firstItem="6x9-Zs-AV9" firstAttribute="top" secondItem="KW1-iB-Fjk" secondAttribute="bottom" constant="8" id="DTP-mm-3HW"/>
+                    <constraint firstItem="UEV-I8-cFf" firstAttribute="leading" secondItem="KW1-iB-Fjk" secondAttribute="trailing" constant="23" id="G7M-ME-4fW"/>
+                    <constraint firstItem="KW1-iB-Fjk" firstAttribute="top" secondItem="idm-Vo-3pJ" secondAttribute="bottom" constant="7" id="HYX-Sp-KG9"/>
+                    <constraint firstItem="UEV-I8-cFf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ItU-Iz-AEw"/>
+                    <constraint firstItem="KW1-iB-Fjk" firstAttribute="centerX" secondItem="idm-Vo-3pJ" secondAttribute="centerX" id="Q9J-0d-YjF"/>
+                    <constraint firstItem="6x9-Zs-AV9" firstAttribute="centerX" secondItem="idm-Vo-3pJ" secondAttribute="centerX" id="V0Z-Vi-LBs"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="UEV-I8-cFf" secondAttribute="trailing" id="aKU-yK-aW9"/>
+                    <constraint firstItem="KW1-iB-Fjk" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ecj-O9-ips"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="29" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="bottomLine" destination="6x9-Zs-AV9" id="0at-2S-jAD"/>
+                <outlet property="titleLabel" destination="UEV-I8-cFf" id="99k-Ks-KDE"/>
+                <outlet property="topLine" destination="idm-Vo-3pJ" id="zos-XK-WQ5"/>
+            </connections>
+            <point key="canvasLocation" x="-247" y="-45"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon" width="19" height="19"/>
+    </resources>
+</document>
